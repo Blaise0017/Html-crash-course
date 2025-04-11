@@ -3,126 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>colors,backgrounds & gradients</title>
-    <style>
-        #shape1{
-            background-color: blue;
-            height: 50px;
-            width: 50px;
-            padding: 30px;
-            border-radius: 10px;
-        }
-        #shape2{
-            background-color: blue;
-            height: 50px;
-            width: 50px;
-            padding: 30px;
-            border-top-left-radius: 10px;
-            border-bottom-right-radius: 20px;
-        }
-        #shape3{
-            background-color: blue;
-            height: 50px;
-            width: 50px;
-            padding: 30px;
-            border-radius: 50%;
-            border: 5px black solid;
-        }
-        #img{
-            border-radius: 50%;
-            width: 100px;
-        }
-        #image-border{
-            border:2px solid;
-            padding:2%;
-
-        }
-
-       
-       
-        .box1{
-            width: 200px;
-            height: 100px;
-            background: #000000;
-            transition: width 2s;
-            transition-delay:1s, height 2s;
-            transition-timing-function: ease-out;
-        }
-        .box1:hover{
-            width: 300px;
-            height: 100px;
-        }
-        .box2{
-            width: 100px;
-            height: 100px;
-            position: relative;
-            background-color: blueviolet;
-            /*
-            animation-name: colorchange;
-            animation-duration: 5s;
-            animation-iteration-count: 3;
-            animation-direction: reverse;*/
-        }
-        /*
-        @keyframes colorchange {
-          from  {background-color: blueviolet;}
-           to {background-color:blue}
-        }
-        @keyframes colorchange {
-            0% {background-color: red;left: 0px;top: 0px;}
-            25% {background-color: bisque;left: 200px;top: 0px;}
-            50% {background-color: yellow;left: 200px;top: 200px;}
-            75% {background-color: aqua;left: 0px;top: 200px;}
-            100% {background-color: green;left: 0px;top: 0px;}
-        }*/
-        article{
-            column-count: 3;
-            column-gap: 40px;
-            /*
-            column-rule-style: solid;
-            column-width: 2px;
-            column-rule-color: coral;*/
-            column-rule: 2px solid coral;
-        }
-        article h1{
-            column-span: all;
-        }
-        .textbox1{
-            border: 2px solid;
-            padding:20px;
-            width: 300px;
-            overflow: auto;
-            resize: both;
-        }
-
-    </style>
+    <title>Blaise site</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
 </head>
-<body>
-    <div id="shape1">rounded corners</div>
-    <br>
-    <div id="shape2">rounded corners</div>
-    <br>
-    <div id="shape3">rounded corners</div><br>
-    <img id="img" src="image.jpg"> 
-    <br>
-    <div id="image-border">this uses an image border</div>
-    <br>
-    <div id="my-bg">
-    <h1>welcome</h1>
-    <p>I started learning how to code when i was 19 yearz old because i wanted to create my own Website and also make my own video game.Over time i have gained a great experience designing and developing mobile and web application.</p>
-    <p>I started learning how to code when i was 19 yearz old because i wanted to create my own Website and also make my own video game.Over time i have gained a great experience designing and developing mobile and web application.</p>
-    </div>
-    <br>
+<body> 
+    <div class="top-container">
+        <h1><em>I'm Blaise.</em></h1>
+        <p>a web designer</p>
+        <img class="skill-row" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTRnMXgwNmY3a2k2MXczZ2ZmNjEzMzR4NnloNnJxcGVwcW50YTN0cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/hUt2pa8rPPUGajN3N1/100.webp" alt="profile">
     
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <br><br>
 
-    <article>
-        <h1>Article title</h1>
-        I started learning how to code when i was 19 yearz old because i wanted to create my own Website and also make my own video game.Over time i have gained a great experience designing and developing mobile and web applicationI started learning how to code when i was 19 yearz old because i wanted to create my own Website and also make my own video game.Over time i have gained a great experience designing and developing mobile and web application
-    </article>
-    <br>
-    <div class="textbox1">resize</div>
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+        <h2>Hello.</h2>
+          <p>I am an IOS and Web Developer.i love creativity✔.</p>
+        </div>
+        <hr>
+        <div class="skills">
+          <h2>My Skills.</h2>
+          <div class="skill-row">
+            <img class="mount-img" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExenBoZTB3c2FvNHoyNnFtNmozMXgwc2FkdHhrYW4zano3Z2FtdTlxaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/78XCFBGOlS6keY1Bil/giphy.webp" alt="mountain-img">
+            
+            <h3>Design & Development</h3>
+            <p>I started learning how to code when i was 19 yearz old because i wanted to create my own Website and also make my own video game.Over time i have gained a great experience designing and developing mobile and web application.</p>  
+          </div>
+          <div class="skill-row">
+            <img class="code-img" src="https://media1.giphy.com/media/d8C9QwHsFQgR39MSTq/200.webp?cid=790b76115lt3qj43tdmjy2imdz7waoljslaxbru6i3gca3xp&ep=v1_gifs_search&rid=200.webp&ct=g" alt="cloud-img">
+            <h3>Sports Challenge</h3>
+            <p>But am actually good in sports.you can call me king of sports challenge.Football and ufc are my favorite sports.</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+    
+        <div 
+        class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>If you love sports as much as i do.</h3>
+          <p>Love sports as much as i do?.lets talk about how great it is!and then we code together!</p><br><br>
+          <a class="btn" href="mailto:nwekeblaise147@email.com">CONTACT ME</a>
+        </div>
+      </div>
+
+
+
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.facebook.com/nwekeblaise">Facebook</a>
+        <a class="footer-link" href="https://twitter.com/Big Croc7">Twitter</a>
+        <a class="footer-link" href="https://www.instagram.com/iam_nwekeblaise">Instagram</a>
+        <p class="copyright">© 2021  BIG CROC.</p>
+      </div>
+      
+
+    
 </body>
 </html>

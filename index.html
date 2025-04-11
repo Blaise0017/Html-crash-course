@@ -3,76 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alice personal site</title>
+    <title>colors,backgrounds & gradients</title>
+    <style>
+        #shape1{
+            background-color: blue;
+            height: 50px;
+            width: 50px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        #shape2{
+            background-color: blue;
+            height: 50px;
+            width: 50px;
+            padding: 30px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 20px;
+        }
+        #shape3{
+            background-color: blue;
+            height: 50px;
+            width: 50px;
+            padding: 30px;
+            border-radius: 50%;
+            border: 5px black solid;
+        }
+        #img{
+            border-radius: 50%;
+            width: 100px;
+        }
+        #image-border{
+            border:2px solid;
+            padding:2%;
+
+        }
+
+       
+       
+        .box1{
+            width: 200px;
+            height: 100px;
+            background: #000000;
+            transition: width 2s;
+            transition-delay:1s, height 2s;
+            transition-timing-function: ease-out;
+        }
+        .box1:hover{
+            width: 300px;
+            height: 100px;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: blueviolet;
+            /*
+            animation-name: colorchange;
+            animation-duration: 5s;
+            animation-iteration-count: 3;
+            animation-direction: reverse;*/
+        }
+        /*
+        @keyframes colorchange {
+          from  {background-color: blueviolet;}
+           to {background-color:blue}
+        }
+        @keyframes colorchange {
+            0% {background-color: red;left: 0px;top: 0px;}
+            25% {background-color: bisque;left: 200px;top: 0px;}
+            50% {background-color: yellow;left: 200px;top: 200px;}
+            75% {background-color: aqua;left: 0px;top: 200px;}
+            100% {background-color: green;left: 0px;top: 0px;}
+        }*/
+        article{
+            column-count: 3;
+            column-gap: 40px;
+            /*
+            column-rule-style: solid;
+            column-width: 2px;
+            column-rule-color: coral;*/
+            column-rule: 2px solid coral;
+        }
+        article h1{
+            column-span: all;
+        }
+        .textbox1{
+            border: 2px solid;
+            padding:20px;
+            width: 300px;
+            overflow: auto;
+            resize: both;
+        }
+
+    </style>
 </head>
 <body>
-    <table cellspacing="20">
-        <tr>
-            <td><img src="image.p" alt="alice profile picture"></td>
-          <td> <h1>Alice Enemari</h1>
-            <p> <em>i am a lecturer at <strong><a href="google.com">BSU</a></strong> </em></p>
-            <p> <em>i love teaching and sports</em></p></td>
-       </tr>
-</table>
-   
-    <hr>
-    <h3>Education</h3> 
-    <ul>
-        <li>army day school makurdi</li>
-        <li>benue state university</li>
-    </ul>
-    <hr>
-    <h3>Work Experience</h3>
-    <table cellspacing="5" border="1" bgcolor="yellow">
-        <thead >
-            <tr>
-            <th width="400">Dates</th>
-            <th width="300">Work</th>
-            <th width="300">Place</th>
-        </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2010-2015</td>
-                <td>reasearcher at neuros</td>
-                <td>USA</td>
-            </tr>     
-                <td>2015-2019</td>
-                <td>lead producer at lab science</td>
-                <td>UK</td>
-            </tr>    
-                <td>20204</td>
-                <td>inspector at florida</td>
-                <td>CANADA</td>
-            </tr>
-
-        </tbody>
-        
-        
-    </table>
-    <h3>Skills</h3>
-    <table cellspacing="20" bgcolor="yellow">
-        <tr>
-            <td>printing</td>
-            <td>✨✨✨✨✨</td>
-            <td>dancing</td>
-            <td>✨✨✨✨</td>
-        </tr>
-        <tr>
-            <td>art</td>
-            <td>✨✨✨</td>
-            <td>painting</td>
-            <td>✨✨</td>
-        </tr>
-    </table>
+    <div id="shape1">rounded corners</div>
+    <br>
+    <div id="shape2">rounded corners</div>
+    <br>
+    <div id="shape3">rounded corners</div><br>
+    <img id="img" src="image.jpg"> 
+    <br>
+    <div id="image-border">this uses an image border</div>
+    <br>
+    <div id="my-bg">
+    <h1>welcome</h1>
+    <p>I started learning how to code when i was 19 yearz old because i wanted to create my own Website and also make my own video game.Over time i have gained a great experience designing and developing mobile and web application.</p>
+    <p>I started learning how to code when i was 19 yearz old because i wanted to create my own Website and also make my own video game.Over time i have gained a great experience designing and developing mobile and web application.</p>
+    </div>
+    <br>
     
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <br><br>
 
-
-    <a href="hobbies.html">My Hobbies</a>
-    <a href="contact.html">My Contact</a>
-   
-    
-
-
+    <article>
+        <h1>Article title</h1>
+        I started learning how to code when i was 19 yearz old because i wanted to create my own Website and also make my own video game.Over time i have gained a great experience designing and developing mobile and web applicationI started learning how to code when i was 19 yearz old because i wanted to create my own Website and also make my own video game.Over time i have gained a great experience designing and developing mobile and web application
+    </article>
+    <br>
+    <div class="textbox1">resize</div>
 </body>
 </html>
